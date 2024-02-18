@@ -1,19 +1,24 @@
+// Declare two variables to calcualte winner
 const start=0;
 let win=0
 
+// Recursive function to play the game 5 times
 for(let i=0; i<5; i++){
     playGame();
 }
 console.log(checkWinner(win));
-console.log(win);
 
+// To play the game and collect the overall winner point
 function playGame(){
     const playerSelection=prompt("Rock, Paper or Scissors?");
     const computerSelection=getComputerchoice();
 
+    // collects the point overall
     win += playRound(playerSelection, computerSelection, start);
 }
 
+
+// To play the round each time and return the winner point for each round
 function playRound(playerSelection, computerSelection, start){
     if(playerSelection.toLowerCase()===computerSelection.toLowerCase()){
         console.log( "Sorry!, It's a tie");
@@ -48,6 +53,7 @@ function playRound(playerSelection, computerSelection, start){
     }
 }
 
+// to return the winner of the game
 function checkWinner(win){
     if(win<0){
         return `Sorry!, Computer is the Winner`;
@@ -60,6 +66,7 @@ function checkWinner(win){
     }
 }
 
+// to generate the computer choice
 function getComputerchoice(){
     const value = ['Rock', 'Paper', 'Scissors'];
     const number = Math.floor(Math.random()*3);
