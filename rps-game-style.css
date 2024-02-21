@@ -3,6 +3,20 @@ body{
     flex-wrap: wrap;
 }
 
+.letsPlay{
+    color: white;
+    font-size: 25px;
+}
+.score{
+    display: flex;
+    flex-grow: 0;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px auto;
+    width: 700px;
+    color: white;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -37,5 +51,5 @@ body{
     gap: 130px;
     position: relative;
     top: -110px;
-    left: -6px;
+    left: -5px;
 }
