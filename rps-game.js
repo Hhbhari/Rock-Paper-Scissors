@@ -1,25 +1,26 @@
-// Declare two variables to calcualte winner
-const start=0;
-let win=0
+// variables to calcualte winner
+const playerScore=0;
+const  computerScore=0;
 
-// Recursive function to play the game 5 times
-for(let i=0; i<5; i++){
-    playGame();
-}
-console.log(checkWinner(win));
+// variables to store user selection
+const selection = document.querySelectorAll('.rps');
+selection.forEach((button)=>{
+    button.addEventListener('click',()=>{
+        const selection=button.innerHTML;
+        playGame(selection);
+    });
+});
 
-// To play the game and collect the overall winner point
-function playGame(){
-    const playerSelection=prompt("Rock, Paper or Scissors?");
+// To play the game
+function playGame(playerSelection){
     const computerSelection=getComputerchoice();
 
-    // collects the point overall
-    win += playRound(playerSelection, computerSelection, start);
+    playRound(playerSelection, computerSelection);
 }
 
 
 // To play the round each time and return the winner point for each round
-function playRound(playerSelection, computerSelection, start){
+function playRound(playerSelection, computerSelection){
     if(playerSelection.toLowerCase()===computerSelection.toLowerCase()){
         console.log( "Sorry!, It's a tie");
         return 0;
