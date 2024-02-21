@@ -12,8 +12,13 @@ body{
     font-family: "Pixelify Sans", sans-serif;
 }
 
-h1:hover{
-    color: red;
+h1{
+    margin: 30px auto;
+    width: 200px;
+
+    &:hover{
+        color: red;
+    }
 }
 
 .score{
