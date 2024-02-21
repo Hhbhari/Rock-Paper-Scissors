@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #090909;
     flex-wrap: wrap;
 }
 
@@ -13,11 +13,21 @@ body{
     margin-top: 40px;
 }
 
+.game-img{
+    border-radius: 10px;
+}
+
 .game-btn{
     cursor: pointer;
-    border-color: red;
+    color: black;
     background-color: white;
     padding: 20px;
+    border-radius: 5px;
+    outline: 5px solid #090909;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .options{
@@ -26,4 +36,5 @@ body{
     gap: 130px;
     position: relative;
     top: -120px;
+    left: -8px;
 }
