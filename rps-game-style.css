@@ -1,12 +1,21 @@
 body{
     background-color: #090909;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .letsPlay{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-family: "Pixelify Sans", sans-serif;
 }
+
+h1:hover{
+    color: red;
+}
+
 .score{
     display: flex;
     flex-grow: 0;
@@ -16,7 +25,17 @@ body{
     margin:0px auto;
     width: 700px;
     color: white;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    font-family: "Pixelify Sans", sans-serif;
 }
+
+.playerScore, .comScore{
+    &:hover{
+        color: red;
+    }
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -35,10 +54,12 @@ body{
     cursor: pointer;
     color: black;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     border: none;
     outline: 5px solid #090909;
+    font-optical-sizing: auto;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 .game-btn:hover{
@@ -50,6 +71,6 @@ body{
     justify-content: center;
     gap: 130px;
     position: relative;
-    top: -110px;
+    top: -130px;
     left: -5px;
 }
