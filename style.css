@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+.playgame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    /* height: 50px; */
+    width: 100px;
+    padding: 10%;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.playgame-btn{
+    display: flex;
+    /* font-size: 32px; */
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    color: yellow;
+    background-color: black;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 90%;
+}
