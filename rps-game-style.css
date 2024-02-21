@@ -17,17 +17,17 @@ body{
     border-radius: 10px;
 }
 
-.game-btn{
+.rps{
     cursor: pointer;
     color: black;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     outline: 5px solid #090909;
+}
 
-    &:hover{
-        transform: scale(1.05);
-    }
+.game-btn:hover{
+    transform: scale(1.05);
 }
 
 .options{
@@ -35,6 +35,6 @@ body{
     justify-content: center;
     gap: 130px;
     position: relative;
-    top: -120px;
-    left: -8px;
+    top: -110px;
+    left: -6px;
 }
