@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    flex-wrap: wrap;
 }
 
 a{
@@ -15,6 +16,7 @@ a{
     opacity: 90%;
     text-decoration: none;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .playgame{
@@ -27,6 +29,7 @@ a{
     padding: 10%;
     background-color: yellow;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .playgame-btn{
@@ -42,4 +45,5 @@ a{
     padding: 10px;
     opacity: 90%;
     cursor: pointer;
+    flex-wrap: wrap;
 }
