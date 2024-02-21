@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.game-content{
+    margin-top: 40px;
+}
+
+.game-btn{
+    cursor: pointer;
+    border-color: red;
+    background-color: white;
+    padding: 20px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    position: relative;
+    top: -120px;
+}
