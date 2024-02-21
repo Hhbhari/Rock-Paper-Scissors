@@ -2,6 +2,21 @@ body{
     background-color: black;
 }
 
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: yellow;
+    background-color: black;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 90%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .playgame{
     display: flex;
     align-items: center;
@@ -26,4 +41,5 @@ body{
     border-radius: 5px;
     padding: 10px;
     opacity: 90%;
+    cursor: pointer;
 }
