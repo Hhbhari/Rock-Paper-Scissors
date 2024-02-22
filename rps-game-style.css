@@ -80,3 +80,30 @@ h1{
     top: -130px;
     left: -5px;
 }
+
+#modal-content{
+    display: none;
+    flex-wrap: wrap;
+    outline: 2px solid red;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: lightslategray;
+    opacity: 50%;
+}
+
+#winner, #loser{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    left: 39%;
+    height: 50%;
+}
+
+img{
+    border-radius: 30px;
+}
