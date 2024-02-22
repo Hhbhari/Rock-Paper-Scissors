@@ -15,8 +15,30 @@ function playGame(playerSelection){
     const computerSelection=getComputerchoice();
 
     playRound(playerSelection, computerSelection);
+    if(scores[0]==5 || scores[1]==5){
+        announceWinner(scores);
+        const reset = document.querySelector('#modal-content');
+        reset.addEventListener('click',()=>{
+            document.getElementById("modal-content").style.display = "none";
+            document.getElementById("winner").style.display = "none";
+            document.getElementById("modal-content").style.display = "none";
+            document.getElementById("loser").style.display = "none";
+            document.querySelector('#player1').innerHTML=scores[0]=0;
+            document.querySelector('#player2').innerHTML=scores[1]=0;
+        })
+    }
 }
 
+function announceWinner(scores){
+    if(scores[0]==5){
+        document.getElementById("modal-content").style.display = "block";
+        document.getElementById("winner").style.display = "block";
+    }
+    else{
+        document.getElementById("modal-content").style.display = "block";
+        document.getElementById("loser").style.display = "block";
+    }
+};
 
 // To play the round each time and return the winner point for each round
 function playRound(playerSelection, computerSelection){
@@ -51,26 +73,11 @@ function playRound(playerSelection, computerSelection){
     else {
         console.log( "Wrong Input");
     }
-}
-
-// to return the winner of the game
-function checkWinner(win){
-    if(win<0){
-        return `Sorry!, Computer is the Winner`;
-    }
-    else if(win>0){
-        return `Hurray!, You are the Winner`;
-    }
-    else{
-        return `It's a tie.`
-    }
-}
+};
 
 // to generate the computer choice
 function getComputerchoice(){
     const value = ['Rock', 'Paper', 'Scissors'];
     const number = Math.floor(Math.random()*3);
     return value[number];
-}
-
-console.log(scores[0]);
+};
