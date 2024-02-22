@@ -1,6 +1,5 @@
 // variables to calcualte winner
-const playerScore=0;
-const  computerScore=0;
+const scores=[0,0];
 
 // variables to store user selection
 const selection = document.querySelectorAll('.rps');
@@ -27,27 +26,27 @@ function playRound(playerSelection, computerSelection){
     }
     else if(playerSelection.toLowerCase()==='rock' && computerSelection.toLowerCase()==='scissors'){
         console.log( "You Win! Rock beats Scissors");
-        return 1;
+        document.querySelector('#player1').innerHTML=scores[0]+=1;
     }
     else if(playerSelection.toLowerCase()==='rock' && computerSelection.toLowerCase()==='paper'){
         console.log( "You Lose! Paper beats Rock");
-        return -1;
+        document.querySelector('#player2').innerHTML=scores[1]+=1;
     }
     else if(playerSelection.toLowerCase()==='scissors' && computerSelection.toLowerCase()==='rock'){
         console.log( "You Lose! Rock beats Scissors");
-        return -1;
+        document.querySelector('#player2').innerHTML=scores[1]+=1;
     }
     else if(playerSelection.toLowerCase()==='scissors' && computerSelection.toLowerCase()==='paper'){
         console.log( "You Win! Scissors beats Paper");
-        return 1;
+        document.querySelector('#player1').innerHTML=scores[0]+=1;
     }
     else if(playerSelection.toLowerCase()==='paper' && computerSelection.toLowerCase()==='scissors'){
         console.log( "You Lose! Scissors beats Paper");
-        return -1;
+        document.querySelector('#player2').innerHTML=scores[1]+=1;
     }
     else if(playerSelection.toLowerCase()==='paper' && computerSelection.toLowerCase()==='rock'){
         console.log( "You Win! Paper beats Rock");
-        return +1;
+        document.querySelector('#player1').innerHTML=scores[0]+=1;
     }
     else {
         console.log( "Wrong Input");
@@ -73,3 +72,5 @@ function getComputerchoice(){
     const number = Math.floor(Math.random()*3);
     return value[number];
 }
+
+console.log(scores[0]);

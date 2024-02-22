@@ -36,6 +36,7 @@ h1{
 }
 
 .playerScore, .comScore{
+    display: flex;
     &:hover{
         color: red;
     }
