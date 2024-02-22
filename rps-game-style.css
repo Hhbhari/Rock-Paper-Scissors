@@ -27,7 +27,7 @@ h1 {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin: 0px auto;
+  margin: 30px auto;
   width: 700px;
   color: white;
   font-size: 15px;
@@ -50,7 +50,8 @@ h1 {
 }
 
 .game-content {
-  margin-top: 40px;
+  margin: auto 0;
+  height: 540px;
 }
 
 .game-img {
