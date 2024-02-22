@@ -86,7 +86,6 @@ h1 {
 #modal-content {
   display: none;
   flex-wrap: wrap;
-  outline: 2px solid red;
   position: fixed;
   z-index: 1;
   top: 0%;
@@ -97,13 +96,30 @@ h1 {
   opacity: 50%;
 }
 
-#winner,
-#loser {
+#img-content {
   display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1024;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#winner {
+  display: block;
   position: fixed;
   z-index: 1;
-  top: 25%;
-  left: 39%;
+  height: 50%;
+}
+
+#loser {
+  display: block;
+  position: fixed;
+  z-index: 1;
   height: 50%;
 }
 

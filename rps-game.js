@@ -17,11 +17,11 @@ function playGame(playerSelection) {
   playRound(playerSelection, computerSelection);
   if (scores[0] == 5 || scores[1] == 5) {
     announceWinner(scores);
-    const reset = document.querySelector("#modal-content");
+    const reset = document.querySelector("#img-content");
     reset.addEventListener("click", () => {
       document.getElementById("modal-content").style.display = "none";
+      document.getElementById("img-content").style.display = "none";
       document.getElementById("winner").style.display = "none";
-      document.getElementById("modal-content").style.display = "none";
       document.getElementById("loser").style.display = "none";
       document.querySelector("#player1").innerHTML = scores[0] = 0;
       document.querySelector("#player2").innerHTML = scores[1] = 0;
@@ -31,11 +31,13 @@ function playGame(playerSelection) {
 
 function announceWinner(scores) {
   if (scores[0] == 5) {
-    document.getElementById("modal-content").style.display = "block";
-    document.getElementById("winner").style.display = "block";
+    document.getElementById("modal-content").style.display = "flex";
+    document.getElementById("img-content").style.display = "flex";
+    document.getElementById("winner").style.display = "flex";
   } else {
-    document.getElementById("modal-content").style.display = "block";
-    document.getElementById("loser").style.display = "block";
+    document.getElementById("modal-content").style.display = "flex";
+    document.getElementById("img-content").style.display = "flex";
+    document.getElementById("loser").style.display = "flex";
   }
 }
 
